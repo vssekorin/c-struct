@@ -183,7 +183,7 @@ extern IList* filter(IList*, i_func);
     match the negation given predicate. */
 extern IList* filter_not(IList*, i_func);
 
-/* Appends all of the elements in the second collection to the end of first list. */
+/* [Mutator] Appends all of the elements in the second collection to the end of first list. */
 extern IList* add_all(IList*, IList*);
 
 /* Returns true if the list contains the specified element. */
