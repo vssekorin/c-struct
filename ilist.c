@@ -280,10 +280,10 @@ IList* from_array(int size, int *arr) {
 }
 
 int* to_array(IList *list) {
-    int count = list->size;
-    int *arr = (int*) malloc(count * sizeof(int));
+    int ind = 0;
+    int *arr = (int*) malloc(list->size * sizeof(int));
     for (Node *cur = list->first; cur; cur = cur->next) {
-        arr[--count] = cur->value;
+        arr[ind++] = cur->value;
     }
     return arr;
 }
@@ -690,3 +690,4 @@ int sum(IList *list) {
     }
     return sum;
 }
+
